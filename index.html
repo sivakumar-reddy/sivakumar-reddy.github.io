@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sivakumar Reddy Yenna — Business &amp; BI Analyst</title>
+<meta name="description" content="Business and BI Analyst across logistics, revenue operations and healthcare. Each project led by the finding. One is a working emergency-department simulation you can run." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --ink:#0E2022;
+  --ink-2:#10262A;
+  --panel:#12282B;
+  --panel-2:#16302F;
+  --line:#22403F;
+  --line-2:#1A3433;
+  --teal:#5AB3A4;
+  --teal-2:#4E9A8D;
+  --amber:#CC8A45;
+  --amber-2:#DA9D5C;
+  --red:#C85C50;
+  --text:#E7E4DA;
+  --muted:#90A29F;
+  --muted-2:#6F827F;
+  --maxw:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;background:var(--ink);color:var(--text);
+  font-family:"Newsreader",Georgia,serif;font-size:17px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+@media(max-width:640px){.wrap{padding:0 20px}}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+.disp{font-family:"Space Grotesk",system-ui,sans-serif}
+a{color:inherit}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:50;background:var(--ink);border-bottom:1px solid var(--line-2)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;font-family:"Space Grotesk";font-weight:500;
+  font-size:14px;letter-spacing:.02em;text-decoration:none}
+.mono-mark{font-family:"JetBrains Mono";font-size:12px;color:var(--teal);border:1px solid var(--line);
+  padding:2px 6px;letter-spacing:.05em}
+.navlinks{display:flex;gap:26px}
+.navlinks a{font-family:"JetBrains Mono";font-size:12.5px;letter-spacing:.04em;color:var(--muted);
+  text-decoration:none;transition:color .15s}
+.navlinks a:hover{color:var(--text)}
+@media(max-width:680px){.navlinks{display:none}}
+
+/* sections */
+section{padding:80px 0;border-top:1px solid var(--line-2)}
+section:first-of-type{border-top:none}
+.eyebrow{font-family:"JetBrains Mono";font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--teal-2);margin:0 0 22px;display:flex;align-items:center;gap:12px}
+.eyebrow .ix{color:var(--muted-2)}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--teal-2);display:inline-block}
+h2.sec{font-family:"Space Grotesk";font-weight:600;font-size:clamp(23px,3vw,30px);
+  letter-spacing:-.01em;line-height:1.12;margin:0 0 14px;max-width:24ch}
+.sec-lede{color:var(--muted);max-width:60ch;margin:0 0 34px;font-size:17px}
+
+/* gentle reveal */
+.rv{opacity:0;transform:translateY(8px);transition:opacity .55s ease,transform .55s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* HERO */
+.hero{padding-top:64px;padding-bottom:60px;border-top:none}
+.hero-id{display:flex;align-items:center;gap:14px;margin-bottom:30px}
+.mono-av{width:58px;height:58px;border:1px solid var(--line);overflow:hidden;flex:0 0 auto;display:flex;align-items:center;justify-content:center;
+  font-family:"Space Grotesk";font-weight:600;font-size:15px;letter-spacing:.04em;color:var(--teal)}
+.mono-av img{width:100%;height:100%;object-fit:cover;display:block}
+.hid .nm{font-family:"Space Grotesk";font-weight:500;font-size:15px}
+.hid .rl{font-family:"JetBrains Mono";font-size:11.5px;color:var(--muted);letter-spacing:.02em;margin-top:2px}
+h1{font-family:"Space Grotesk";font-weight:600;letter-spacing:-.022em;line-height:1.05;
+  font-size:clamp(36px,5.6vw,62px);margin:0 0 24px;max-width:15ch}
+h1 .ship{color:var(--teal)}
+.lede{font-size:clamp(18px,2vw,21px);color:#C6CFCC;max-width:58ch;margin:0 0 26px;line-height:1.5}
+.metarow{display:flex;flex-wrap:wrap;gap:10px 22px;font-family:"JetBrains Mono";font-size:12px;
+  color:var(--muted);margin:0 0 30px;letter-spacing:.02em}
+.metarow span{display:inline-flex;align-items:center;gap:8px}
+.metarow .av{width:6px;height:6px;background:var(--teal);border-radius:50%}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.btn{font-family:"JetBrains Mono";font-size:12.5px;letter-spacing:.03em;padding:11px 18px;
+  text-decoration:none;border:1px solid var(--line);color:var(--text);transition:border-color .15s,background .15s,color .15s;display:inline-flex;align-items:center;gap:7px}
+.btn:hover{border-color:var(--teal-2);background:rgba(90,179,164,.06)}
+.btn.solid{background:var(--teal);border-color:var(--teal);color:#0B1E1B;font-weight:500}
+.btn.solid:hover{background:#67c1b2}
+.btn.amber{border-color:var(--amber);color:var(--amber-2)}
+.btn.amber:hover{background:rgba(204,138,69,.08);border-color:var(--amber)}
+
+/* MODEL */
+.model{margin-top:54px;border:1px solid var(--line);background:var(--panel)}
+.model-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;
+  padding:20px 24px;border-bottom:1px solid var(--line-2)}
+.model-head .lab{font-family:"JetBrains Mono";font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.model-head h3{font-family:"Space Grotesk";font-weight:600;font-size:clamp(18px,2.3vw,23px);margin:8px 0 0;letter-spacing:-.01em}
+.modtag{font-family:"JetBrains Mono";font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--amber-2);border:1px solid var(--amber);padding:5px 9px;white-space:nowrap}
+.model-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:0}
+@media(max-width:820px){.model-grid{grid-template-columns:1fr}}
+.readout{padding:24px;border-right:1px solid var(--line-2)}
+@media(max-width:820px){.readout{border-right:none;border-bottom:1px solid var(--line-2)}}
+.bignum{font-family:"Space Grotesk";font-weight:700;font-size:clamp(52px,8vw,76px);line-height:.92;
+  color:var(--amber);letter-spacing:-.03em}
+.bigunit{font-family:"Newsreader";font-style:italic;color:var(--muted);font-size:16px;margin-top:8px}
+.delta-row{display:flex;gap:0;margin-top:22px;border:1px solid var(--line-2)}
+.delta{flex:1;padding:13px 15px}
+.delta+.delta{border-left:1px solid var(--line-2)}
+.delta .k{font-family:"JetBrains Mono";font-size:10.5px;letter-spacing:.04em;color:var(--muted);text-transform:uppercase}
+.delta .v{font-family:"Space Grotesk";font-weight:600;font-size:20px;margin-top:6px}
+.delta .v.good{color:var(--teal)}
+.delta .v.flat{color:var(--muted)}
+.tags{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}
+.tagchip{font-family:"JetBrains Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:5px 9px;border:1px solid var(--line-2);color:var(--muted)}
+.tagchip.bind{color:var(--amber-2);border-color:var(--amber)}
+.controls{margin-top:22px}
+.ctrl{display:grid;grid-template-columns:120px 1fr 72px;align-items:center;gap:12px;margin:13px 0}
+@media(max-width:520px){.ctrl{grid-template-columns:90px 1fr 60px;gap:10px}}
+.ctrl label{font-family:"Newsreader";font-size:15px;color:#C4CFCC}
+.ctrl .val{font-family:"JetBrains Mono";font-size:13px;text-align:right;color:var(--amber-2)}
+input[type=range]{-webkit-appearance:none;appearance:none;height:2px;background:var(--line);outline:none;width:100%}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;background:var(--amber);
+  cursor:pointer;border:none;border-radius:0}
+input[type=range]::-moz-range-thumb{width:14px;height:14px;background:var(--amber);cursor:pointer;border:none;border-radius:0}
+input[type=range]:focus-visible::-webkit-slider-thumb{outline:2px solid var(--amber-2);outline-offset:2px}
+.charts{padding:24px;display:grid;grid-template-columns:1.7fr 1fr;gap:16px}
+@media(max-width:520px){.charts{grid-template-columns:1fr}}
+.chartbox .ct{font-family:"JetBrains Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.chartbox svg{width:100%;height:auto;display:block;overflow:visible}
+.model-foot{padding:16px 24px;border-top:1px solid var(--line-2);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+.model-foot p{margin:0;font-size:14px;color:var(--muted);max-width:64ch;line-height:1.5}
+.runlink{font-family:"JetBrains Mono";font-size:12px;color:var(--amber-2);text-decoration:none;white-space:nowrap;border-bottom:1px solid var(--line);padding-bottom:2px}
+.runlink:hover{color:var(--amber)}
+
+/* WORK */
+.proj{display:grid;grid-template-columns:34px 1fr 300px;gap:30px;padding:38px 0;border-top:1px solid var(--line-2)}
+.proj:first-of-type{border-top:none;padding-top:0}
+@media(max-width:880px){.proj{grid-template-columns:1fr;gap:20px}}
+.proj .ix{font-family:"JetBrains Mono";font-size:12px;color:var(--muted-2);padding-top:5px}
+.lane{font-family:"JetBrains Mono";font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-2);margin-bottom:12px}
+.proj h3{font-family:"Space Grotesk";font-weight:600;font-size:clamp(20px,2.6vw,26px);letter-spacing:-.015em;margin:0 0 11px;line-height:1.15}
+.proj h3 .em{color:var(--amber-2)}
+.proj p.find{font-size:16.5px;color:#C2CCC9;margin:0 0 16px;max-width:56ch;line-height:1.5}
+.stkrow{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 16px}
+.stk{font-family:"JetBrains Mono";font-size:11px;color:var(--muted);border:1px solid var(--line-2);padding:3px 8px}
+.linkrow{display:flex;gap:16px;flex-wrap:wrap}
+.plink{font-family:"JetBrains Mono";font-size:12.5px;text-decoration:none;color:var(--text);border-bottom:1px solid var(--line);padding-bottom:2px;transition:color .15s,border-color .15s}
+.plink:hover{color:var(--teal);border-color:var(--teal)}
+.plink.demo{color:var(--amber-2)}
+.plink.demo:hover{color:var(--amber);border-color:var(--amber)}
+.viz{border:1px solid var(--line-2);padding:16px;background:var(--ink-2)}
+.viz .vt{font-family:"JetBrains Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.viz svg{width:100%;height:auto;display:block;overflow:visible}
+
+/* TIMELINE / experience */
+.tl{margin-top:6px}
+.tl-item{display:grid;grid-template-columns:200px 1fr;gap:28px;padding:26px 0;border-top:1px solid var(--line-2)}
+.tl-item:first-child{border-top:none;padding-top:4px}
+@media(max-width:760px){.tl-item{grid-template-columns:1fr;gap:8px}}
+.tl-meta{font-family:"JetBrains Mono";font-size:12px;color:var(--muted);line-height:1.7}
+.tl-meta .yr{color:var(--text)}
+.tl-meta .loc{color:var(--muted-2)}
+.tl-body h4{font-family:"Space Grotesk";font-weight:600;font-size:18px;margin:0 0 3px;letter-spacing:-.01em}
+.tl-body .co{font-family:"Newsreader";font-style:italic;color:var(--teal-2);font-size:16px;margin:0 0 12px}
+.tl-body ul{margin:0;padding:0;list-style:none}
+.tl-body li{position:relative;padding-left:18px;margin-bottom:7px;font-size:15.5px;color:#BEC8C5;line-height:1.48}
+.tl-body li::before{content:"";position:absolute;left:0;top:.62em;width:5px;height:1px;background:var(--teal-2)}
+
+/* EDU */
+.edu-item{display:grid;grid-template-columns:200px 1fr;gap:28px;padding:20px 0;border-top:1px solid var(--line-2)}
+.edu-item:first-child{border-top:none}
+@media(max-width:760px){.edu-item{grid-template-columns:1fr;gap:6px}}
+.edu-item .deg{font-family:"Space Grotesk";font-weight:600;font-size:17px}
+.edu-item .sch{font-family:"Newsreader";font-style:italic;color:var(--muted);font-size:15.5px;margin-top:2px}
+
+/* SKILLS */
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:1px solid var(--line-2)}
+@media(max-width:680px){.skills{grid-template-columns:1fr}}
+.skgroup{padding:22px 24px;border-bottom:1px solid var(--line-2)}
+.skgroup:nth-child(odd){border-right:1px solid var(--line-2)}
+@media(max-width:680px){.skgroup:nth-child(odd){border-right:none}}
+.skgroup .sgt{font-family:"JetBrains Mono";font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-2);margin-bottom:12px}
+.skgroup .sgl{display:flex;flex-wrap:wrap;gap:7px}
+.sk{font-family:"JetBrains Mono";font-size:12px;color:#C2CCC9;border:1px solid var(--line-2);padding:4px 9px}
+
+/* CERTS */
+.certs{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:1px solid var(--line-2)}
+@media(max-width:680px){.certs{grid-template-columns:1fr}}
+.cert{padding:18px 22px;border-bottom:1px solid var(--line-2);display:flex;justify-content:space-between;gap:14px;align-items:baseline}
+.cert:nth-child(odd){border-right:1px solid var(--line-2)}
+@media(max-width:680px){.cert:nth-child(odd){border-right:none}}
+.cert .cn{font-family:"Space Grotesk";font-weight:500;font-size:15.5px}
+.cert .ci{font-family:"JetBrains Mono";font-size:10.5px;color:var(--muted-2);margin-top:4px}
+.cert .cy{font-family:"JetBrains Mono";font-size:11px;color:var(--muted);white-space:nowrap}
+
+/* BEYOND */
+.beyond{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line-2)}
+@media(max-width:760px){.beyond{grid-template-columns:1fr}}
+.by{padding:22px 24px;border-bottom:1px solid var(--line-2)}
+.by:not(:last-child){border-right:1px solid var(--line-2)}
+@media(max-width:760px){.by:not(:last-child){border-right:none}}
+.by .bt{font-family:"Space Grotesk";font-weight:600;font-size:16px;margin-bottom:8px}
+.by p{margin:0;font-size:15px;color:var(--muted);line-height:1.5}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:44px}
+@media(max-width:760px){.about-grid{grid-template-columns:1fr;gap:26px}}
+.about-grid p{font-size:17.5px;line-height:1.66;color:#C8D1CE;margin:0 0 18px}
+.about-grid p:last-child{margin-bottom:0}
+.about-grid .em{color:var(--teal)}
+.openbox{border:1px solid var(--line-2);padding:20px}
+.openbox .ot{font-family:"JetBrains Mono";font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-2);margin-bottom:10px;display:flex;align-items:center;gap:9px}
+.openbox .od{width:7px;height:7px;background:var(--teal);border-radius:50%}
+.openbox p{font-size:15px;color:#C2CCC9;margin:0;line-height:1.5}
+
+/* CONTACT */
+.clinks{margin-top:6px;border-top:1px solid var(--line-2)}
+.crow{display:flex;align-items:baseline;justify-content:space-between;gap:18px;padding:18px 2px;
+  border-bottom:1px solid var(--line-2);text-decoration:none;color:var(--text);transition:padding .15s,color .15s}
+.crow:hover{padding-left:10px;color:var(--teal)}
+.crow .ck{font-family:"JetBrains Mono";font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.crow .cv{font-family:"Space Grotesk";font-weight:500;font-size:clamp(16px,2vw,21px)}
+.crow:hover .cv{color:var(--teal)}
+
+footer{padding:30px 0 50px;border-top:1px solid var(--line-2)}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+footer .fnote,.totop{font-family:"JetBrains Mono";font-size:11.5px;color:var(--muted-2);letter-spacing:.02em}
+.totop{text-decoration:none}
+.totop:hover{color:var(--teal)}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="mono-mark">SY</span> Sivakumar Reddy Yenna</a>
+    <nav class="navlinks">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-id rv">
+      <div class="mono-av"><img src="data:image/jpeg;base64,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" alt="Sivakumar Reddy Yenna" /></div>
+      <div class="hid">
+        <div class="nm">Sivakumar Reddy Yenna</div>
+        <div class="rl mono">Business Analyst · BI / Data Analyst</div>
+      </div>
+    </div>
+    <h1 class="rv">I find the answer hiding in the data, then <span class="ship">ship</span> it.</h1>
+    <p class="lede rv">Three end-to-end analytics projects across revenue, healthcare and logistics, each led by the finding rather than the toolset. One is a working emergency-department simulation you can run yourself, below.</p>
+    <div class="metarow rv mono">
+      <span><span class="av"></span>Open to Business, BI, RevOps &amp; Marketing Analyst roles</span>
+      <span>St. Charles, IL · Chicago metro / remote</span>
+      <span>MS, MIS — Northern Illinois University</span>
+    </div>
+    <div class="cta-row rv">
+      <a class="btn solid" href="#work">See the work</a>
+      <a class="btn amber" href="https://ed-twin.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+
+    <!-- MODEL -->
+    <div class="model rv" id="model">
+      <div class="model-head">
+        <div>
+          <div class="lab">Emergency department · heavy load</div>
+          <h3>What actually shortens a patient's stay?</h3>
+        </div>
+        <span class="modtag">Interactive</span>
+      </div>
+      <div class="model-grid">
+        <div class="readout">
+          <div class="bignum" id="los">467</div>
+          <div class="bigunit" id="losunit">median minutes in the ED</div>
+          <div class="delta-row">
+            <div class="delta"><div class="k">+1 physician</div><div class="v good" id="dPhys">−5.0 hrs</div></div>
+            <div class="delta"><div class="k">+1 bed</div><div class="v flat" id="dBed">≈0 min</div></div>
+          </div>
+          <div class="tags">
+            <span class="tagchip bind">Physicians · binding</span>
+            <span class="tagchip">Beds · little effect</span>
+          </div>
+          <div class="controls">
+            <div class="ctrl">
+              <label for="phys">Physicians on shift</label>
+              <input id="phys" type="range" min="4" max="9" step="1" value="4" aria-label="Physicians on shift" />
+              <span class="val" id="physVal">4 docs</span>
+            </div>
+            <div class="ctrl">
+              <label for="beds">Try beds instead</label>
+              <input id="beds" type="range" min="0" max="10" step="1" value="0" aria-label="Extra beds" />
+              <span class="val" id="bedsVal">+0 beds</span>
+            </div>
+          </div>
+        </div>
+        <div class="charts">
+          <div class="chartbox">
+            <div class="ct">Median LOS vs physicians</div>
+            <svg id="chartP" viewBox="0 0 300 180" role="img" aria-label="Length of stay falls sharply as physicians are added"></svg>
+          </div>
+          <div class="chartbox">
+            <div class="ct">vs beds — same scale</div>
+            <svg id="chartB" viewBox="0 0 150 180" role="img" aria-label="Length of stay stays flat as beds are added"></svg>
+          </div>
+        </div>
+      </div>
+      <div class="model-foot">
+        <p>Drag the sliders. One added physician cuts the median stay by about five hours under heavy load; five added beds produce no measurable change. Illustrative response surface — the full simulation runs 30 seeded replications at 95% confidence in the live app.</p>
+        <a class="runlink" href="https://ed-twin.vercel.app" target="_blank" rel="noopener">Run the full model ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <div class="wrap">
+    <div class="eyebrow rv"><span class="ix">01</span> Selected work</div>
+    <h2 class="sec rv">Three projects, three lanes, one habit: lead with what the data actually said.</h2>
+    <div class="sec-lede rv">Logistics, revenue operations and healthcare. Each ends as something a stakeholder can open and act on.</div>
+
+    <article class="proj rv">
+      <div class="ix">01</div>
+      <div>
+        <div class="lane">Healthcare ops · prescriptive</div>
+        <h3>ed-twin — a digital twin that ranks the levers <span class="em">cutting ED length of stay</span></h3>
+        <p class="find">A discrete-event simulation of emergency-department patient flow (arrival, triage, physician assessment, admission, boarding) finds the binding constraint is physician capacity, not bed count. One added physician cuts the median 467-minute stay by roughly five hours under heavy load; five added beds produce no measurable change. Run across 30 seeded replications at 95% confidence, deployed as a live app on a precomputed grid. MIMIC-IV-ED calibration in progress.</p>
+        <div class="stkrow"><span class="stk">Python</span><span class="stk">SimPy · DES</span><span class="stk">PostgreSQL</span><span class="stk">Next.js</span></div>
+        <div class="linkrow">
+          <a class="plink demo" href="https://ed-twin.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+          <a class="plink" href="https://github.com/sivakumar-reddy/ed-twin" target="_blank" rel="noopener">Code ↗</a>
+        </div>
+      </div>
+      <div class="viz">
+        <div class="vt">Median LOS saved per lever</div>
+        <svg id="vizLever" viewBox="0 0 280 130" role="img" aria-label="One physician saves about 300 minutes; five beds save about one minute"></svg>
+      </div>
+    </article>
+
+    <article class="proj rv">
+      <div class="ix">02</div>
+      <div>
+        <div class="lane">RevOps &amp; marketing · predictive</div>
+        <h3>Customer segmentation that found the revenue was <span class="em">one purchase from churning</span></h3>
+        <p class="find">RFM scoring and K-Means across 93,349 e-commerce customers and $15.4M in revenue. Two churn-vulnerable segments, Potential Loyalists and At Risk, drive 59% of that revenue, while only 0.25% of customers show any repeat-purchase loyalty signal. I demonstrated model-selection judgment by rejecting a non-converging probabilistic CLV model for a defensible deterministic one, and wrote that up as a finding.</p>
+        <div class="stkrow"><span class="stk">Python</span><span class="stk">scikit-learn</span><span class="stk">PostgreSQL</span><span class="stk">RFM · K-Means</span></div>
+        <div class="linkrow"><a class="plink" href="https://github.com/sivakumar-reddy/revops-customer-segmentation" target="_blank" rel="noopener">Code ↗</a></div>
+      </div>
+      <div class="viz">
+        <div class="vt">Revenue at churn risk</div>
+        <svg id="vizDonut" viewBox="0 0 280 130" role="img" aria-label="59 percent of revenue sits in two churn-vulnerable segments"></svg>
+      </div>
+    </article>
+
+    <article class="proj rv">
+      <div class="ix">03</div>
+      <div>
+        <div class="lane">Supply chain · descriptive</div>
+        <h3>The premium shipping tier that <span class="em">cost 2.4× and delivered worst</span></h3>
+        <p class="find">An end-to-end pipeline over 12,000 shipments across five warehouses and four carriers, surfacing $87K in late-delivery penalties on a 38.4% on-time rate. The signature anomaly: the premium carrier cost 2.4 times more per shipment yet delivered on time only 10% of the time, six times worse than the cheapest carrier, a clear renegotiation target. Modeled through PostgreSQL staging and analytical marts, delivered as a 3-page Power BI dashboard.</p>
+        <div class="stkrow"><span class="stk">Python</span><span class="stk">PostgreSQL</span><span class="stk">Power BI</span></div>
+        <div class="linkrow"><a class="plink" href="https://github.com/sivakumar-reddy/logistics-analytics" target="_blank" rel="noopener">Code ↗</a></div>
+      </div>
+      <div class="viz">
+        <div class="vt">On-time rate by carrier</div>
+        <svg id="vizBars" viewBox="0 0 280 130" role="img" aria-label="ExpressShip on time 10 percent versus 38.4 percent network and 60 percent cheapest"></svg>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="eyebrow rv"><span class="ix">02</span> Experience</div>
+    <h2 class="sec rv">Where the analyst's instinct was built.</h2>
+    <div class="tl">
+      <div class="tl-item rv">
+        <div class="tl-meta"><span class="yr">Jan 2026 – May 2026</span><br>Total Quality Logistics<br><span class="loc">Illinois · Hybrid</span></div>
+        <div class="tl-body">
+          <h4>Strategy &amp; AI Consulting Intern</h4>
+          <div class="co">Total Quality Logistics</div>
+          <ul>
+            <li>Selected for a semester-long strategy and AI consulting engagement analyzing marketing, sales and recruitment processes for operational inefficiencies and growth opportunities.</li>
+            <li>Developed data-driven recommendations to improve qualified lead generation, sales conversion and time-to-hire metrics.</li>
+            <li>Evaluated AI opportunities including chatbot feasibility, automated lead qualification and AI-assisted recruitment screening.</li>
+            <li>Delivered an executive-level presentation and report outlining strategic and technology-enabled improvements.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item rv">
+        <div class="tl-meta"><span class="yr">Sep 2025 – May 2026</span><br>Northern Illinois University<br><span class="loc">DeKalb, IL · On-site</span></div>
+        <div class="tl-body">
+          <h4>Graduate Staff Assistant — Alumni Engagement &amp; Event Coordinator</h4>
+          <div class="co">Northern Illinois University</div>
+          <ul>
+            <li>Segmented alumni lists and pulled engagement reports in Millennium and EverTrue (CRM) to drive targeted outreach and donor campaigns across a 200,000+ alumni network.</li>
+            <li>Built dashboards tracking alumni engagement and giving metrics, turning CRM data into actionable insights for the Advancement team.</li>
+            <li>Maintained alumni databases and records, ensuring data accuracy across engagement and giving activity.</li>
+            <li>Coordinated alumni and donor events including Homecoming and regional gatherings, managing planning, logistics and promotion.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item rv">
+        <div class="tl-meta"><span class="yr">Mar 2025 – Sep 2025</span><br>NIU · Survey Research Lab<br><span class="loc">CHHS · Hybrid</span></div>
+        <div class="tl-body">
+          <h4>Research Assistant — Survey Research Lab (CHHS)</h4>
+          <div class="co">Northern Illinois University</div>
+          <ul>
+            <li>Conducted surveys and interviews for health and human sciences research projects.</li>
+            <li>Ensured data accuracy, confidentiality and compliance with research protocols.</li>
+            <li>Supported data entry, cleaning and analysis to facilitate actionable insights, and helped refine survey methodologies.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item rv">
+        <div class="tl-meta"><span class="yr">May 2022 – Jun 2022</span><br>Omegacube Technologies</div>
+        <div class="tl-body">
+          <h4>Business Intelligence Intern</h4>
+          <div class="co">Omegacube Technologies</div>
+          <ul>
+            <li>Prototyped multiple Power BI dashboards for the sales and financial modules of the company's ERP product.</li>
+            <li>Connected and modeled diverse PostgreSQL data sources to power the dashboards.</li>
+            <li>Translated project requirements into clear, business-ready visualizations supporting reporting objectives.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item rv">
+        <div class="tl-meta"><span class="yr">May 2023 – Jun 2023</span><br>Learnwik</div>
+        <div class="tl-body">
+          <h4>Business Analyst Intern</h4>
+          <div class="co">Learnwik</div>
+          <ul>
+            <li>Early analyst internship supporting requirements gathering and reporting.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="wrap">
+    <div class="eyebrow rv"><span class="ix">03</span> Education</div>
+    <div class="edu-item rv">
+      <div class="tl-meta"><span class="yr">Aug 2024 – May 2026</span><br><span class="loc">DeKalb, IL</span></div>
+      <div>
+        <div class="deg">Master of Science, Management Information Systems</div>
+        <div class="sch">Northern Illinois University</div>
+      </div>
+    </div>
+    <div class="edu-item rv">
+      <div class="tl-meta"><span class="yr">2020 – 2024</span><br><span class="loc">India</span></div>
+      <div>
+        <div class="deg">Bachelor of Technology, Computer Science &amp; Business Systems</div>
+        <div class="sch">GITAM University</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="eyebrow rv"><span class="ix">04</span> Skills &amp; tools</div>
+    <div class="skills rv">
+      <div class="skgroup">
+        <div class="sgt">Languages &amp; analytics</div>
+        <div class="sgl"><span class="sk">Python</span><span class="sk">pandas</span><span class="sk">NumPy</span><span class="sk">scikit-learn</span><span class="sk">SimPy</span><span class="sk">SQL</span><span class="sk">R</span><span class="sk">Jupyter</span></div>
+      </div>
+      <div class="skgroup">
+        <div class="sgt">Data &amp; modeling</div>
+        <div class="sgl"><span class="sk">PostgreSQL</span><span class="sk">Data modeling</span><span class="sk">Discrete event simulation</span><span class="sk">Statistical analysis</span><span class="sk">A/B &amp; scenario testing</span></div>
+      </div>
+      <div class="skgroup">
+        <div class="sgt">BI &amp; visualization</div>
+        <div class="sgl"><span class="sk">Power BI</span><span class="sk">DAX</span><span class="sk">Tableau</span><span class="sk">Excel</span><span class="sk">Google Analytics 4</span></div>
+      </div>
+      <div class="skgroup">
+        <div class="sgt">RevOps, marketing &amp; BA</div>
+        <div class="sgl"><span class="sk">Customer segmentation</span><span class="sk">RFM</span><span class="sk">CLV</span><span class="sk">Churn analysis</span><span class="sk">Funnel &amp; campaign analytics</span><span class="sk">Requirements gathering</span><span class="sk">Stakeholder management</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="eyebrow rv"><span class="ix">05</span> About</div>
+    <div class="about-grid">
+      <div class="rv">
+        <h2 class="sec">I turn messy operational data into answers people actually decide on.</h2>
+        <p>I'm a Business and BI analyst with an MS in Management Information Systems from Northern Illinois University, based in St. Charles, Illinois. I work across three lanes on purpose: <span class="em">revenue and marketing, healthcare operations, and supply chain</span>. The common thread isn't an industry, it's the habit of chasing a dataset until it says something a stakeholder can act on.</p>
+        <p>That habit is in the work. I segmented 93,349 customers and found 59% of revenue sitting in two segments one purchase from churning. I traced $87K in penalties to a premium carrier that cost more and delivered worst. I built a working ED simulator that proved physician capacity, not beds, is what shortens a patient's stay.</p>
+        <p>Before the portfolio I spent a semester as a strategy and AI consulting intern at Total Quality Logistics, and over a year building dashboards and segmenting a 200,000-plus alumni network at NIU, with earlier BI and analyst internships behind that.</p>
+      </div>
+      <div class="rv">
+        <div class="openbox">
+          <div class="ot"><span class="od"></span>Open to work</div>
+          <p>Business Analyst, BI / Data Analyst, RevOps and Marketing Analyst roles in the Chicago metro or remote across the US. The fastest way to reach me is email.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTS -->
+<section id="certs">
+  <div class="wrap">
+    <div class="eyebrow rv"><span class="ix">06</span> Certifications</div>
+    <div class="certs rv">
+      <div class="cert"><div><div class="cn">Google Data Analytics</div><div class="ci">Google · ID BH9AYWB9WUK5</div></div></div>
+      <div class="cert"><div><div class="cn">Google Analytics (GA4)</div><div class="ci">Google</div></div></div>
+      <div class="cert"><div><div class="cn">CompTIA Security+</div><div class="ci">CompTIA</div></div></div>
+      <div class="cert"><div><div class="cn">AI Fluency: Framework &amp; Foundations</div><div class="ci">Anthropic Academy</div></div></div>
+      <div class="cert"><div><div class="cn">Claude 101</div><div class="ci">Anthropic Academy</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="eyebrow rv"><span class="ix">07</span> Contact</div>
+    <h2 class="sec rv">Have a problem hiding in your data? Let's find it.</h2>
+    <div class="clinks rv">
+      <a class="crow" href="mailto:reddysivakumar1361@gmail.com"><span class="ck">Email</span><span class="cv">reddysivakumar1361@gmail.com</span></a>
+      <a class="crow" href="tel:+13313144323"><span class="ck">Phone</span><span class="cv">(331) 314-4323</span></a>
+      <a class="crow" href="https://www.linkedin.com/in/sivakumar-reddy-yenna" target="_blank" rel="noopener"><span class="ck">LinkedIn</span><span class="cv">in/sivakumar-reddy-yenna ↗</span></a>
+      <a class="crow" href="https://github.com/sivakumar-reddy" target="_blank" rel="noopener"><span class="ck">GitHub</span><span class="cv">github.com/sivakumar-reddy ↗</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="fnote">© 2026 Sivakumar Reddy Yenna · St. Charles, IL</span>
+    <a class="totop" href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function svg(tag,attrs){var e=document.createElementNS('http://www.w3.org/2000/svg',tag);for(var k in attrs){e.setAttribute(k,attrs[k]);}return e;}
+
+  /* reveals */
+  if(!reduce){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.1,rootMargin:'0px 0px -6% 0px'});
+    document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+  } else { document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');}); }
+
+  /* ED MODEL — tuned to resume: +1 physician ~ -5 hrs, beds ~ flat */
+  var A=3.94, SCALE=4.83, FLOOR=150, CAP=0.99;
+  function physWait(p){var r=A/p;if(r>=CAP)return null;return SCALE*(r/(1-r));}
+  function floorBeds(b){return FLOOR-Math.min(2,0.2*b);}
+  function los(p,b){var w=physWait(p);if(w===null)return null;return Math.round(floorBeds(b)+w);}
+
+  var physEl=document.getElementById('phys'),bedsEl=document.getElementById('beds');
+  var losEl=document.getElementById('los'),losUnit=document.getElementById('losunit');
+  var physVal=document.getElementById('physVal'),bedsVal=document.getElementById('bedsVal');
+  var dPhys=document.getElementById('dPhys'),dBed=document.getElementById('dBed');
+  var chartP=document.getElementById('chartP'),chartB=document.getElementById('chartB');
+
+  var Y_MIN=120,Y_MAX=500;
+  function yPix(v,h,top){var t=(v-Y_MIN)/(Y_MAX-Y_MIN);t=Math.max(0,Math.min(1,t));return top+(1-t)*h;}
+
+  function drawPhys(curB,curP){
+    chartP.innerHTML='';
+    var W=300,H=180,padL=30,padR=8,padT=12,padB=24,plotW=W-padL-padR,plotH=H-padT-padB;
+    var pMin=3,pMax=9;function x(p){return padL+(p-pMin)/(pMax-pMin)*plotW;}
+    [200,300,400].forEach(function(g){var yy=yPix(g,plotH,padT);
+      chartP.appendChild(svg('line',{x1:padL,y1:yy,x2:W-padR,y2:yy,stroke:'#1A3433','stroke-width':1}));
+      chartP.appendChild(svg('text',{x:padL-6,y:yy+3,'text-anchor':'end',fill:'#6F827F','font-size':8,'font-family':'JetBrains Mono'})).textContent=g;});
+    var d='',started=false,breakX=null;
+    for(var i=0;i<=120;i++){var p=pMin+(pMax-pMin)*(i/120);var v=los(p,curB);
+      if(v===null){breakX=x(p);continue;}var px=x(p),py=yPix(v,plotH,padT);
+      d+=(started?'L':'M')+px.toFixed(1)+' '+py.toFixed(1)+' ';started=true;}
+    if(breakX!==null){chartP.appendChild(svg('rect',{x:padL,y:padT,width:Math.max(0,breakX-padL),height:plotH,fill:'rgba(200,92,80,.07)'}));
+      chartP.appendChild(svg('text',{x:padL+3,y:padT+10,fill:'#C85C50','font-size':7,'font-family':'JetBrains Mono'})).textContent='OVERLOADED';}
+    chartP.appendChild(svg('path',{d:d,fill:'none',stroke:'#CC8A45','stroke-width':2,'stroke-linejoin':'round','stroke-linecap':'round'}));
+    var cv=los(curP,curB);
+    if(cv!==null){var cx=x(curP),cy=yPix(cv,plotH,padT);
+      chartP.appendChild(svg('line',{x1:cx,y1:cy,x2:cx,y2:padT+plotH,stroke:'#CC8A45','stroke-width':1,'stroke-dasharray':'2 3',opacity:.45}));
+      chartP.appendChild(svg('rect',{x:cx-3,y:cy-3,width:6,height:6,fill:'#CC8A45',stroke:'#0E2022','stroke-width':1.5}));}
+    [4,6,8].forEach(function(p){chartP.appendChild(svg('text',{x:x(p),y:H-7,'text-anchor':'middle',fill:'#6F827F','font-size':8,'font-family':'JetBrains Mono'})).textContent=p;});
+  }
+  function drawBeds(curP,curB){
+    chartB.innerHTML='';
+    var W=150,H=180,padL=8,padR=8,padT=12,padB=24,plotW=W-padL-padR,plotH=H-padT-padB;
+    var bMin=0,bMax=10;function x(b){return padL+(b-bMin)/(bMax-bMin)*plotW;}
+    [200,300,400].forEach(function(g){var yy=yPix(g,plotH,padT);chartB.appendChild(svg('line',{x1:padL,y1:yy,x2:W-padR,y2:yy,stroke:'#1A3433','stroke-width':1}));});
+    var d='',started=false;
+    for(var b=bMin;b<=bMax;b+=0.5){var v=los(curP,b);if(v===null)continue;var px=x(b),py=yPix(v,plotH,padT);d+=(started?'L':'M')+px.toFixed(1)+' '+py.toFixed(1)+' ';started=true;}
+    chartB.appendChild(svg('path',{d:d,fill:'none',stroke:'#90A29F','stroke-width':2,'stroke-linejoin':'round','stroke-linecap':'round'}));
+    var cv=los(curP,curB);
+    if(cv!==null){var cx=x(curB),cy=yPix(cv,plotH,padT);chartB.appendChild(svg('rect',{x:cx-3,y:cy-3,width:6,height:6,fill:'#90A29F',stroke:'#0E2022','stroke-width':1.5}));}
+    [0,5,10].forEach(function(b){chartB.appendChild(svg('text',{x:x(b),y:H-7,'text-anchor':'middle',fill:'#6F827F','font-size':8,'font-family':'JetBrains Mono'})).textContent='+'+b;});
+  }
+  function fmtMin(n){if(n===null)return '—';var a=Math.abs(n);if(a<1)return '≈0 min';return (n<0?'−':'+')+a+' min';}
+  function fmtPhys(n){if(n===null)return '—';var a=Math.abs(n);if(a>=60){var h=(a/60);return (n<0?'−':'+')+(h>=10?Math.round(h):h.toFixed(1))+' hrs';}return (n<0?'−':'+')+a+' min';}
+  function update(){
+    var p=parseInt(physEl.value,10),b=parseInt(bedsEl.value,10);
+    physVal.textContent=p+' docs';bedsVal.textContent='+'+b+' beds';
+    var cur=los(p,b);losEl.textContent=cur;losUnit.textContent='median minutes in the ED';
+    var addP=los(Math.min(9,p+1),b),addB=los(p,Math.min(10,b+1));
+    dPhys.textContent=(cur!==null&&addP!==null)?fmtPhys(addP-cur):'—';
+    dBed.textContent=(cur!==null&&addB!==null)?fmtMin(addB-cur):'—';
+    drawPhys(b,p);drawBeds(p,b);
+  }
+  physEl.addEventListener('input',update);bedsEl.addEventListener('input',update);update();
+
+  /* PROJECT VIZ */
+  function S(t,a){return svg(t,a);}
+  (function(){var el=document.getElementById('vizLever');if(!el)return;
+    var data=[['+1 physician',300,'#CC8A45'],['+5 beds',1,'#90A29F']];
+    var max=320,x0=86,w=160,rowH=40,y0=18;
+    data.forEach(function(d,i){var y=y0+i*rowH;
+      el.appendChild(S('text',{x:78,y:y+13,'text-anchor':'end',fill:'#C2CCC9','font-size':11,'font-family':'Space Grotesk'})).textContent=d[0];
+      el.appendChild(S('rect',{x:x0,y:y+2,width:w,height:14,fill:'#1A3433'}));
+      var bw=Math.max(2,(d[1]/max)*w);
+      el.appendChild(S('rect',{x:x0,y:y+2,width:bw,height:14,fill:d[2]}));
+      el.appendChild(S('text',{x:x0+bw+6,y:y+13,fill:d[2],'font-size':10,'font-family':'JetBrains Mono'})).textContent='−'+d[1]+' min';});
+    el.appendChild(S('text',{x:x0,y:122,fill:'#6F827F','font-size':8,'font-family':'JetBrains Mono'})).textContent='median minutes saved · heavy load';
+  })();
+  (function(){var el=document.getElementById('vizDonut');if(!el)return;
+    var cx=58,cy=64,r=42,sw=18,pct=0.59,circ=2*Math.PI*r;
+    el.appendChild(S('circle',{cx:cx,cy:cy,r:r,fill:'none',stroke:'#1A3433','stroke-width':sw}));
+    el.appendChild(S('circle',{cx:cx,cy:cy,r:r,fill:'none',stroke:'#CC8A45','stroke-width':sw,'stroke-dasharray':(circ*pct)+' '+circ,'stroke-dashoffset':circ*0.25,transform:'rotate(-90 '+cx+' '+cy+')'}));
+    el.appendChild(S('text',{x:cx,y:cy-1,'text-anchor':'middle',fill:'#CC8A45','font-size':20,'font-weight':700,'font-family':'Space Grotesk'})).textContent='59%';
+    el.appendChild(S('text',{x:cx,y:cy+13,'text-anchor':'middle',fill:'#90A29F','font-size':7.5,'font-family':'JetBrains Mono'})).textContent='of revenue';
+    var lx=118;
+    el.appendChild(S('rect',{x:lx,y:38,width:9,height:9,fill:'#CC8A45'}));
+    el.appendChild(S('text',{x:lx+15,y:46,fill:'#C2CCC9','font-size':10,'font-family':'Space Grotesk'})).textContent='Churn-vulnerable';
+    el.appendChild(S('rect',{x:lx,y:56,width:9,height:9,fill:'#1A3433'}));
+    el.appendChild(S('text',{x:lx+15,y:64,fill:'#90A29F','font-size':10,'font-family':'Space Grotesk'})).textContent='Everyone else';
+    el.appendChild(S('text',{x:lx,y:92,fill:'#6F827F','font-size':8.5,'font-family':'JetBrains Mono'})).textContent='only 0.25% show';
+    el.appendChild(S('text',{x:lx,y:104,fill:'#6F827F','font-size':8.5,'font-family':'JetBrains Mono'})).textContent='loyalty signal';
+  })();
+  (function(){var el=document.getElementById('vizBars');if(!el)return;
+    var data=[['Premium · 2.4× cost',10,'#C85C50'],['Network avg',38.4,'#90A29F'],['Cheapest carrier',60,'#5AB3A4']];
+    var x0=8,maxV=70,base=100,bw=58,gap=88;
+    data.forEach(function(d,i){var bx=x0+i*gap,val=d[1],bh=(val/maxV)*72;
+      el.appendChild(S('rect',{x:bx,y:base-bh,width:bw,height:bh,fill:d[1]<0?'#1A3433':d[2]}));
+      el.appendChild(S('text',{x:bx+bw/2,y:base-bh-6,'text-anchor':'middle',fill:d[2],'font-size':13,'font-weight':700,'font-family':'Space Grotesk'})).textContent=val+'%';
+      el.appendChild(S('text',{x:bx+bw/2,y:base+12,'text-anchor':'middle',fill:'#90A29F','font-size':7.5,'font-family':'JetBrains Mono'})).textContent=d[0];});
+    el.appendChild(S('text',{x:x0,y:124,fill:'#6F827F','font-size':8,'font-family':'JetBrains Mono'})).textContent='on-time delivery rate';
+  })();
+})();
+</script>
+</body>
+</html>
